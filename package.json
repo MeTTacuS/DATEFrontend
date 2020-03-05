@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "npx webpack"
+    "compile": "webpack --mode development",
+    "start": "webpack --mode development --watch"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +13,8 @@
   "devDependencies": {
     "@types/react": "^16.9.23",
     "@types/react-dom": "^16.9.5",
+    "eslint": "^6.8.0",
+    "prettier": "1.19.1",
     "source-map-loader": "^0.2.4",
     "ts-loader": "^6.2.1",
     "typescript": "^3.8.3",
@@ -19,6 +22,9 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
+    "eslint-config-blvd": "^1.0.2",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
   }
